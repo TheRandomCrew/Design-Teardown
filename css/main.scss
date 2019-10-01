@@ -54,8 +54,46 @@ main {
 }
 
 .latest-articles {
-  background-color: $greydark;
+  background-color: $greyregular;
   height: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__mainTitle{
+    position: absolute;
+    background-color: $greydark;
+    width: 400px;
+    height: 80px;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-150%);
+    text-align: center;
+    color: white;
+  }
+
+  &__mainArticle {
+    text-align: center;
+    outline: 1px solid $greylight;
+    width: 50%;
+    height: 500px;
+  }
+
+  &__title {
+    font-size: 48;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 20px;
+    color: white;
+  }
+
+  &__textDummy {
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 90%;
+    height: 45px;
+    background-color: white;
+  }
 }
 
 .general-articles {
@@ -96,4 +134,8 @@ main {
 footer {
   width: 100%;
   height: 600px;
+}
+
+.--hid{
+  background-color: $greyregular;
 }
