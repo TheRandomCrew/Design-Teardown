@@ -1,0 +1,64 @@
+@import "reset";
+
+$greydark: rgb(49, 49, 49);
+$greyregular: rgb(100, 100, 100);
+$greylight: rgb(150, 150, 150);
+
+header,
+footer {
+  background-color: $greyregular;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+}
+
+main {
+  width: 100%;
+}
+
+.latest-articles {
+  background-color: $greydark;
+  height: 1000px;
+}
+
+.general-articles {
+  background-color: $greylight;
+  height: 1500px;
+}
+
+.coming-up {
+  background-color: $greydark;
+  height: 500px;
+}
+
+.community-links {
+  height: 800px;
+}
+
+.featured {
+  background-color: $greydark;
+  height: 400px;
+}
+
+.curated-posts {
+  background-color: $greyregular;
+  height: 600px;
+}
+
+.newsletter {
+  height: 600px;
+
+  .cta {
+    background-color: $greydark;
+    max-width: 1400px;
+    margin: 100px auto;
+    border-radius: 12px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 600px;
+}
