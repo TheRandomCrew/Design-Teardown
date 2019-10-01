@@ -4,6 +4,13 @@ $greydark: rgb(49, 49, 49);
 $greyregular: rgb(100, 100, 100);
 $greylight: rgb(150, 150, 150);
 
+@mixin textStyleWhite {
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
 body {
   font-size: 18px;
 }
@@ -16,13 +23,6 @@ header {
   justify-content: space-around;
   position: relative;
 
-  & > span {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    align-self: flex-start;
-  }
-
   & > div {
     background-color: $greylight;
     display: flex;
@@ -33,19 +33,25 @@ header {
   }
 
   & > .logo {
+    margin: 2px;
     height: 100px;
-    width: 150px;
+    width: 250px;
+    @include textStyleWhite();
   }
 
   & > .nav-links {
+    margin: 2px;
     height: 100px;
-    width: 100px;
+    width: 200px;
     background-color: $greyregular;
+    @include textStyleWhite();
   }
 
   & > .search {
+    margin: 2px;
     height: 50px;
-    width: 100px;
+    width: 200px;
+    @include textStyleWhite();
   }
 }
 
@@ -60,16 +66,15 @@ main {
   display: flex;
   flex-wrap: wrap;
 
-  &__mainTitle{
+  &__mainTitle {
     position: absolute;
     background-color: $greydark;
     width: 400px;
     height: 80px;
     left: 50%;
     top: 15%;
-    transform: translate(-50%,-150%);
-    text-align: center;
-    color: white;
+    transform: translate(-50%, -150%);
+    @include textStyleWhite();
   }
 
   &__mainArticle {
@@ -80,11 +85,9 @@ main {
   }
 
   &__title {
-    font-size: 48;
-    font-weight: bold;
     margin-top: 45px;
     margin-left: 20px;
-    color: white;
+    @include textStyleWhite();
   }
 
   &__textDummy {
@@ -136,6 +139,39 @@ footer {
   height: 600px;
 }
 
-.--hid{
+.--hid {
   background-color: $greyregular;
+}
+
+.membership {
+  display: flex;
+  border: 1px solid $greyregular;
+  height: 550px;
+  width: 100%;
+  background-color: $greylight;
+
+  &__text {
+    margin-top: 45px;
+    margin-left: 45px;
+    width: 500px;
+    height: 45px;
+    background-color: white;
+  }
+
+  &__floatingButton {
+    background-color: $greydark;
+    margin-right: 200px;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    @include textStyleWhite();
+  }
+}
+
+.--membershipButton {
+  background-color: $greydark;
+  width: 400px;
+  height: 65px;
+  @include textStyleWhite();
 }

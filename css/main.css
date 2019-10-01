@@ -292,14 +292,6 @@ header {
   position: relative;
 }
 
-header > span {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 header > div {
   background-color: #969696;
   display: -webkit-box;
@@ -316,19 +308,34 @@ header > div {
 }
 
 header > .logo {
+  margin: 2px;
   height: 100px;
-  width: 150px;
+  width: 250px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 header > .nav-links {
+  margin: 2px;
   height: 100px;
-  width: 100px;
+  width: 200px;
   background-color: #646464;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 header > .search {
+  margin: 2px;
   height: 50px;
-  width: 100px;
+  width: 200px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 main {
@@ -355,8 +362,10 @@ main {
   top: 15%;
   -webkit-transform: translate(-50%, -150%);
           transform: translate(-50%, -150%);
-  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 .latest-articles__mainArticle {
@@ -367,11 +376,12 @@ main {
 }
 
 .latest-articles__title {
-  font-size: 48;
-  font-weight: bold;
   margin-top: 45px;
   margin-left: 20px;
+  font-size: 42px;
+  font-weight: bold;
   color: white;
+  text-align: center;
 }
 
 .latest-articles__textDummy {
@@ -424,5 +434,46 @@ footer {
 
 .--hid {
   background-color: #646464;
+}
+
+.membership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #646464;
+  height: 550px;
+  width: 100%;
+  background-color: #969696;
+}
+
+.membership__text {
+  margin-top: 45px;
+  margin-left: 45px;
+  width: 500px;
+  height: 45px;
+  background-color: white;
+}
+
+.membership__floatingButton {
+  background-color: #313131;
+  margin-right: 200px;
+  margin-top: 50px;
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.--membershipButton {
+  background-color: #313131;
+  width: 400px;
+  height: 65px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
