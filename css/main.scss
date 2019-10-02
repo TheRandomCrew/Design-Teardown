@@ -420,7 +420,7 @@ main {
 }
 
 .footerContent {
-  background-color: $greydark;
+  background-color: $greyregular;
   height: 800px;
   position: relative;
   display: flex;
@@ -434,6 +434,13 @@ main {
     background-color: $greylight;
   }
 
+  &__blockParent {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
   &__block {
     width: 400px;
     height: 300px;
@@ -443,9 +450,22 @@ main {
     color: $greydark;
     text-align: center;
   }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    background-color: $greydark;
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
 }
 
 .--smallTxt {
-  width: 70vw;
+  width: 30vw;
   height: 35px;
 }
