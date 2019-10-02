@@ -652,11 +652,6 @@ main {
   border-radius: 12px;
 }
 
-footer {
-  width: 100%;
-  height: 600px;
-}
-
 .--hid {
   background-color: #646464;
 }
@@ -700,5 +695,112 @@ footer {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #646464;
+  height: 550px;
+  width: 100%;
+  background-color: #969696;
+}
+
+.curated-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+}
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90vw;
+  height: 900px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: #646464;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletter__text {
+  width: 40vw;
+  height: 40px;
+  background-color: white;
+  margin: 20px;
+}
+
+.newsletter__Img {
+  width: 30vw;
+  height: 30vw;
+  background-color: #313131;
+  margin: 50px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.newsletter__inputAction {
+  width: 35vw;
+  height: 60px;
+  background-color: white;
+  margin: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #313131;
+  text-align: center;
+}
+
+.footerContent {
+  background-color: #313131;
+  height: 800px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerContent__text {
+  width: 80vw;
+  height: 40px;
+  background-color: #969696;
+}
+
+.footerContent__block {
+  width: 400px;
+  height: 300px;
+  background-color: #969696;
+  font-size: 42px;
+  font-weight: bold;
+  color: #313131;
+  text-align: center;
+}
+
+.--smallTxt {
+  width: 70vw;
+  height: 35px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,13 +4,6 @@ $greydark: rgb(49, 49, 49);
 $greyregular: rgb(100, 100, 100);
 $greylight: rgb(150, 150, 150);
 
-@mixin textStyleWhite {
-  font-size: 42px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
 %textDummy {
   width: 90%;
   height: 45px;
@@ -327,11 +320,6 @@ main {
   }
 }
 
-footer {
-  width: 100%;
-  height: 600px;
-}
-
 .--hid {
   background-color: $greyregular;
 }
@@ -373,4 +361,91 @@ footer {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.featured {
+  display: flex;
+  border: 1px solid $greyregular;
+  height: 550px;
+  width: 100%;
+  background-color: $greylight;
+}
+
+.curated-posts {
+  display: flex;
+  height: 500px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 900px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: $greyregular;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    width: 40vw;
+    height: 40px;
+    background-color: white;
+    margin: 20px;
+  }
+
+  &__Img {
+    width: 30vw;
+    height: 30vw;
+    background-color: $greydark;
+    margin: 50px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  &__inputAction {
+    width: 35vw;
+    height: 60px;
+    background-color: white;
+    margin: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: $greydark;
+    text-align: center;
+  }
+}
+
+.footerContent {
+  background-color: $greydark;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    width: 80vw;
+    height: 40px;
+    background-color: $greylight;
+  }
+
+  &__block {
+    width: 400px;
+    height: 300px;
+    background-color: $greylight;
+    font-size: 42px;
+    font-weight: bold;
+    color: $greydark;
+    text-align: center;
+  }
+}
+
+.--smallTxt {
+  width: 70vw;
+  height: 35px;
 }
