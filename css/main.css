@@ -759,6 +759,10 @@ header > .search {
   width: 80vw;
   height: 40px;
   background-color: #969696;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .footerContent__blockParent {
@@ -798,4 +802,8 @@ header > .search {
 .--smallTxt {
   width: 30vw;
   height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }

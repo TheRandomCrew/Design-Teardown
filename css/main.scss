@@ -404,6 +404,10 @@ header {
     width: 80vw;
     height: 40px;
     background-color: $greylight;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 
   &__blockParent {
@@ -440,4 +444,8 @@ header {
 .--smallTxt {
   width: 30vw;
   height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
