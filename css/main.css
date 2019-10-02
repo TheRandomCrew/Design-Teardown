@@ -274,12 +274,6 @@ progress {
   vertical-align: baseline;
 }
 
-.latest-articles__textDummy, .articleTitle {
-  width: 90%;
-  height: 45px;
-  background-color: white;
-}
-
 body {
   font-size: 18px;
 }
@@ -393,6 +387,9 @@ main {
 .latest-articles__textDummy {
   margin-top: 40px;
   margin-left: 5%;
+  width: 90%;
+  height: 45px;
+  background-color: white;
 }
 
 .general-articles {
@@ -414,6 +411,9 @@ main {
 .articleTitle {
   margin-top: 40px;
   margin-left: 5%;
+  width: 90%;
+  height: 45px;
+  background-color: white;
 }
 
 .articleParagraph {

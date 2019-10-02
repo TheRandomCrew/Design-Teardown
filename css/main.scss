@@ -42,8 +42,10 @@ header {
     margin: 2px;
     height: 100px;
     width: 250px;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 
   & > .nav-links {
@@ -51,16 +53,20 @@ header {
     height: 100px;
     width: 200px;
     background-color: $greyregular;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 
   & > .search {
     margin: 2px;
     height: 50px;
     width: 200px;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -83,8 +89,10 @@ main {
     left: 50%;
     top: 15%;
     transform: translate(-50%, -150%);
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 
   &__mainArticle {
@@ -97,15 +105,18 @@ main {
   &__title {
     margin-top: 45px;
     margin-left: 20px;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 
   &__textDummy {
     margin-top: 40px;
     margin-left: 5%;
-
-    @extend %textDummy;
+    width: 90%;
+    height: 45px;
+    background-color: white;
   }
 }
 
@@ -125,8 +136,9 @@ main {
 .articleTitle {
   margin-top: 40px;
   margin-left: 5%;
-
-  @extend %textDummy;
+  width: 90%;
+  height: 45px;
+  background-color: white;
 }
 
 .articleParagraph {
@@ -147,8 +159,10 @@ main {
     width: 280px;
     height: 280px;
     background-color: $greydark;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -180,8 +194,10 @@ main {
       width: 150px;
       height: 150px;
       background-color: $greydark;
-
-      @include textStyleWhite();
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
     }
   }
 
@@ -215,8 +231,10 @@ main {
     height: 50px;
     background-color: $greydark;
     border-radius: 10px;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -265,8 +283,10 @@ main {
     margin: 20px;
     transition: 0.5s;
     transform: rotate(-20deg);
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 
     &:hover {
       transform: rotate(0deg);
@@ -338,8 +358,10 @@ footer {
     width: 400px;
     height: 300px;
     margin-left: auto;
-
-    @include textStyleWhite();
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
   }
 }
 
@@ -347,6 +369,8 @@ footer {
   background-color: $greydark;
   width: 400px;
   height: 65px;
-
-  @include textStyleWhite();
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
