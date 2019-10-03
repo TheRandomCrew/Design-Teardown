@@ -1,0 +1,451 @@
+@import "reset";
+
+$greydark: rgb(49, 49, 49);
+$greyregular: rgb(100, 100, 100);
+$greylight: rgb(150, 150, 150);
+
+%textDummy {
+  width: 90%;
+  height: 45px;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+  & > div {
+    background-color: $greylight;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+  }
+
+  & > .logo {
+    margin: 2px;
+    height: 100px;
+    width: 250px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  & > .nav-links {
+    margin: 2px;
+    height: 100px;
+    width: 200px;
+    background-color: $greyregular;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  & > .search {
+    margin: 2px;
+    height: 50px;
+    width: 200px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.latest-articles {
+  background-color: $greyregular;
+  height: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__mainTitle {
+    position: absolute;
+    background-color: $greydark;
+    width: 400px;
+    height: 80px;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -150%);
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  &__mainArticle {
+    text-align: center;
+    outline: 1px solid $greylight;
+    width: 50%;
+    height: 500px;
+  }
+
+  &__title {
+    margin-top: 45px;
+    margin-left: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  &__textDummy {
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 90%;
+    height: 45px;
+    background-color: white;
+  }
+}
+
+.general-articles {
+  background-color: $greylight;
+  height: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__article {
+    width: 25%;
+    height: 500px;
+    outline: 1px solid $greydark;
+  }
+}
+
+.articleTitle {
+  margin-top: 40px;
+  margin-left: 5%;
+  width: 90%;
+  height: 45px;
+  background-color: white;
+}
+
+.articleParagraph {
+  margin-top: 40px;
+  margin-left: 5%;
+  width: 90%;
+  height: 55%;
+  background-color: white;
+}
+
+.ad {
+  width: 25%;
+  height: 500px;
+  outline: 1px solid $greydark;
+
+  & > div {
+    margin: 40px auto;
+    width: 280px;
+    height: 280px;
+    background-color: $greydark;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.signIn {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid $greydark;
+
+  &__container {
+    width: 90%;
+    height: 90%;
+    border-radius: 16px;
+    background-color: $greyregular;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  &__image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    & > div {
+      width: 150px;
+      height: 150px;
+      background-color: $greydark;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    & > div {
+      width: 55%;
+      height: 40px;
+      background-color: white;
+    }
+  }
+
+  &__text {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    & > div {
+      width: 60%;
+      height: 50px;
+      background-color: white;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 25%;
+    height: 50px;
+    background-color: $greydark;
+    border-radius: 10px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.coming-up {
+  background-color: $greydark;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community-links {
+  height: 800px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__row {
+    height: 200px;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+  }
+
+  &__person {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__article {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    background-color: $greydark;
+    margin: 20px;
+    transition: 0.5s;
+    transform: rotate(-20deg);
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    &:hover {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__text {
+    width: 80%;
+    height: 50px;
+    background-color: $greyregular;
+    margin: 20px;
+  }
+}
+
+.--person {
+  width: 150px;
+  height: 150px;
+}
+
+.featured {
+  display: flex;
+  border: 1px solid $greyregular;
+  height: 550px;
+  width: 100%;
+  background-color: $greylight;
+}
+
+.curated-posts {
+  background-color: $greyregular;
+  display: flex;
+  height: 500px;
+}
+
+.--hid {
+  background-color: $greyregular;
+}
+
+.membership {
+  display: flex;
+  border: 1px solid $greyregular;
+  height: 550px;
+  width: 100%;
+  background-color: $greylight;
+
+  &__text {
+    margin-top: 45px;
+    margin-left: 45px;
+    width: 500px;
+    height: 45px;
+    background-color: white;
+  }
+
+  &__floatingButton {
+    background-color: $greydark;
+    margin-right: 200px;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.--membershipButton {
+  background-color: $greydark;
+  width: 400px;
+  height: 65px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 900px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background-color: $greyregular;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    width: 40vw;
+    height: 40px;
+    background-color: white;
+    margin: 20px;
+  }
+
+  &__Img {
+    width: 30vw;
+    height: 30vw;
+    background-color: $greydark;
+    margin: 50px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  &__inputAction {
+    width: 35vw;
+    height: 60px;
+    background-color: white;
+    margin: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    color: $greydark;
+    text-align: center;
+  }
+}
+
+.footerContent {
+  background-color: $greyregular;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    width: 80vw;
+    height: 40px;
+    background-color: $greylight;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+
+  &__blockParent {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block {
+    width: 400px;
+    height: 300px;
+    background-color: $greylight;
+    font-size: 42px;
+    font-weight: bold;
+    color: $greydark;
+    text-align: center;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    background-color: $greydark;
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.--smallTxt {
+  width: 30vw;
+  height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
