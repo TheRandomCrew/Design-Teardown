@@ -1,20 +1,30 @@
+<p align="center">
+  <a href="https://github.com/Israel-Laguan/Design-Teardown">
+    <img src="https://user-images.githubusercontent.com/67714964/168340045-ba5b776d-f759-476d-9bf0-d711fe8e9172.png" alt="Logo" width="800" height="500">
+  </a>
+</p>
+
+ <h1 align="center">
+	Design-Teardown
+  </h1>
+
 # Design-Teardown
 
-This project consists of building a heatmap of the [Smashing magazine website](https://www.smashingmagazine.com/).  The goal for this project is to start training to think in terms of visual hierarchy, typography and design principles, by create a grayscale heat map of the website that indicates which elements have the greatest weight in the visual hierarchy.
+This project consists of building a heatmap of the [Smashing magazine website](https://www.smashingmagazine.com/). The goal for this project is to start training to think in terms of visual hierarchy, typography and design principles, by create a grayscale heat map of the website that indicates which elements have the greatest weight in the visual hierarchy.
 
 # Live version
 
-[Visit me]( https://israel-laguan.github.io/Design-Teardown/)
+[Visit me](https://israel-laguan.github.io/Design-Teardown/)
 
 # Built With
 
-* Flexbox CSS
-* Love and Passion for code.
-* HTML5 with help of SASS Compiler.
+- Flexbox CSS
+- Love and Passion for code.
+- HTML5 with help of SASS Compiler.
 
 # Authors
 
-* [Mario Dena](https://github.com/MarioDena).
+- [Mario Dena](https://github.com/MarioDena).
 <table style="width:100%">
   <tr>
     <td>
